@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test suite" verbose="1">
+    <listeners>
+        <listener class-name="com.automation.customlisteners.CustomListeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="SignPageTest">
+
+        <classes>
+           <class name="com.automation.testsuite.SignPageTest"/>
+        </classes>
+    </test>
+    <test name="CreateAccountPageTest">
+        <classes>
+            <class name="com.automation.testsuite.CreateAccountPageTest"/>
+        </classes>
+    </test>
+    <test name="WomenCategoryPageTest">
+        <classes>
+            <class name="com.automation.testsuite.WomenCategoryPageTest"/>
+        </classes>
+    </test>
+
+</suite>
